@@ -24,9 +24,8 @@ const GuitarTone = ({note}) => {
 
   return (
     <div>
-      <h1>Guitar Player</h1>
       <button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
-        Play Guitar Sound
+        {note}
       </button>
     </div>
   );

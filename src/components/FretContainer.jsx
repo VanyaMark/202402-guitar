@@ -2,15 +2,16 @@ import React from 'react'
 import * as Tone from "tone";
 import GuitarTone from './GuitarTone';
 
-const FretContainer = () => {
+const FretContainer = ({title}) => {
   return (
     <div>
-        <GuitarTone note="E1"/>
-        <GuitarTone note="B1" />
-        <GuitarTone note="G1" />
-        <GuitarTone note="D1" />
-        <GuitarTone note="A1" />
-        <GuitarTone note="E2" />
+        <h3>{title}</h3>
+        <GuitarTone note="E2"/>
+        <GuitarTone note="A2" />
+        <GuitarTone note="D3" />
+        <GuitarTone note="G3" />
+        <GuitarTone note="B3" />
+        <GuitarTone note="E4" />
     </div>
   )
 }

@@ -8,8 +8,7 @@ function App() {
     <div className="App">
       <h1>Say Hello to your first Guitar Lesson!</h1>
       <Button />
-      <GuitarTone />
-      <FretContainer />
+      <FretContainer title="Free Strings"/>
     </div>
   );
 }
