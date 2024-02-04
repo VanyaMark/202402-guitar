@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import * as Tone from "tone";
 
-const GuitarTone = () => {
-  const [isMouseDown, setIsMouseDown] = useState(false);
+const GuitarTone = ({note}) => {
   
   // Create a FMSynth for a guitar-like sound
   const synth = new Tone.FMSynth().toDestination();
@@ -12,7 +11,7 @@ const GuitarTone = () => {
 
 
     // Trigger attack when mouse is down
-    synth.triggerAttack("C2");
+    synth.triggerAttack(note);
 
   };
 
