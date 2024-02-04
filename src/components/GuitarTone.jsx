@@ -8,8 +8,6 @@ const GuitarTone = ({note}) => {
 
   const handleMouseDown = () => {
 
-
-
     // Trigger attack when mouse is down
     synth.triggerAttack(note);
 
