@@ -1,12 +1,14 @@
 import "./App.css";
 
 import FretContainer from "./components/FretContainer";
+import BtnTone from "./components/BtnTone";
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 function App() {
   return (
     <div className="App">
       <h1>Say Hello to your first Guitar Lesson!</h1>
+      <BtnTone/>
       <ButtonGroup className="me-2" aria-label="Second group">
         <FretContainer
           title="Free Strings"
