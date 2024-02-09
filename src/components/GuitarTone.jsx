@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as Tone from "tone";
+import Button from 'react-bootstrap/Button';
 
 const GuitarTone = ({note}) => {
   
@@ -21,11 +22,11 @@ const GuitarTone = ({note}) => {
   };
 
   return (
-    <div>
-      <button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+
+      <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
         {note}
-      </button>
-    </div>
+      </Button>
+
   );
 };
 
