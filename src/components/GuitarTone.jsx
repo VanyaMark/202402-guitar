@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import * as Tone from "tone";
 import Button from 'react-bootstrap/Button';
 
@@ -7,8 +7,13 @@ const GuitarTone = ({note}) => {
   // Create a FMSynth for a guitar-like sound
   const synth = new Tone.FMSynth().toDestination();
 
+  useEffect(() => {
+    // Start the audio context when the component mounts
+    Tone.start();
+  }, []);
+
   const handleMouseDown = () => {
-    
+
      // Start the audio context in response to a user gesture
      Tone.start();
 

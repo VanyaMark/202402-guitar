@@ -18,10 +18,7 @@ const FretContainer = ({title, notes}) => {
         <GuitarTone note={notesArray[3]} />
         <GuitarTone note={notesArray[4]} />
         <GuitarTone note={notesArray[5]} />
-
     </ButtonGroup>
-    <GuitarTone note={notesArray[1]} />
-
     </div>
   )
 }
