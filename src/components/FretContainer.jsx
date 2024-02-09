@@ -9,7 +9,7 @@ const FretContainer = ({title, notes}) => {
     const notesArray = typeof notes === 'string' ? notes.split(' ') : [];
 
   return (
-    <ButtonGroup>
+    <ButtonGroup className="me-2" aria-label="Second group">
         <h3>{title}</h3>
         <GuitarTone note={notesArray[0]}/>
         <GuitarTone note={notesArray[1]} />
