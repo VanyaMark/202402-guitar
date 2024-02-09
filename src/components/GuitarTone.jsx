@@ -23,7 +23,7 @@ const GuitarTone = ({note}) => {
 
   return (
 
-      <Button onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+      <Button variant="danger" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
         {note}
       </Button>
 
