@@ -8,6 +8,9 @@ const GuitarTone = ({note}) => {
   const synth = new Tone.FMSynth().toDestination();
 
   const handleMouseDown = () => {
+    
+     // Start the audio context in response to a user gesture
+     Tone.start();
 
     // Trigger attack when mouse is down
     synth.triggerAttack(note);

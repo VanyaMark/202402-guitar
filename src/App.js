@@ -1,6 +1,5 @@
 import "./App.css";
-import Button from "./components/Button";
-import GuitarTone from "./components/GuitarTone";
+
 import FretContainer from "./components/FretContainer";
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
@@ -10,7 +9,6 @@ function App() {
       <h1>Say Hello to your first Guitar Lesson!</h1>
       <ButtonGroup className="me-2" aria-label="Second group">
         <FretContainer
-          className="row"
           title="Free Strings"
           notes="E2 A2 D3 G3 B3 E4"
         />
